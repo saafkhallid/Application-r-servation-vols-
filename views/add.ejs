@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+    crossorigin="anonymous">
+
+
+  <link rel="stylesheet" href="css/style.css">
+  <title>CodeGig</title>
+</head>
+
+<body>
+  <header class="inner">
+    <h2><a href="index.ejs"><i class="fas fa-code"></i>
+      AirLines <span class="sup-titre">Youssoufia</span></a></h2>
+    <nav>
+      <ul>
+        <li>
+          <a  class="titre" href="index.ejs">Home</a>
+        </li>
+        <li>
+          <a  class="titre" href="gigs.ejs">All</a>
+        </li>
+        <li>
+          <a  class="titre" href="add.ejs">Add</a>
+        </li>     
+      </ul>
+    </nav>
+  </header>
+
+  <section id="add" class="container">
+    <div class="form-wrap">
+      <h1>Add A  Vol</h1>
+      <p>Your contact email will be shared with registered users to apply to your gig</p>
+      <form>
+        <div class="input-group">
+          <label for="title">ville</label>
+          <input type="text" name="title" id="title" class="input-box" placeholder="la ville de départ/d’arrivé"
+            maxlength="100" required>
+        </div>
+        <div class="input-group">
+          <label for="technologies">Heure</label>
+          <input type="text" name="technologies" id="technologies" class="input-box" placeholder="l’heure départ /d’arrivé"
+          maxlength="100">
+        </div>
+        <div class="input-group">
+          <label for="budget">Date</label>
+          <input type="number" name="budget" id="budget" class="input-box" placeholder="la date de départ/Arrivé">
+        </div>
+        <div class="input-group">
+          <label for="description">Places</label>
+          <textarea name="description" id="description" class="input-box" placeholder="le nombre de places."
+            rows="10" required></textarea>
+        </div>
+
+        <input type="submit" value="Add Gig" class="btn btn-reverse">
+      </form>
+    </div>
+  </section>
+</body>
+
+</html>
